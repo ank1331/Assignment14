@@ -1,0 +1,291 @@
+body {
+  border: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  height: 99vh;
+  width: 35%;
+}
+.leftside {
+  height: 99vh;
+  width: 100%;
+}
+.leftside::before {
+  content: "";
+  position: absolute;
+  background: url(../Images/pexels-rfstudio-3819572.jpg) no-repeat center
+    center/cover;
+  height: 100%;
+  width: 35%;
+  z-index: -1;
+}
+.logo {
+  margin-top: 40px;
+  height: 30px;
+  width: 80px;
+  margin-left: 80px;
+}
+.right {
+  /* border: 1px solid red; */
+  width: 65%;
+  height: 99vh;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.line {
+  width: 15em;
+  height: 0.05em;
+  background-color: black;
+  margin-left: 4em;
+}
+.menubar {
+  /* border: 1px solid red; */
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+.menuitem {
+  margin-right: 3em;
+  color: #7b7d7e;
+}
+.menuitem:nth-child(1) {
+  color: black;
+  font-weight: bold;
+}
+
+.mid {
+  display: flex;
+  margin-left: 1em;
+  /* border: 1px solid red; */
+}
+.text {
+  width: 50%;
+  /* border: 1px solid red; */
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+}
+.text_1 {
+  font-size: 6.5em;
+  /* text-align: end; */
+  /* margin-top: 1em; */
+  /* border: 1px solid red; */
+  font-family: "Tourney";
+  font-weight: 100;
+}
+.text_2 {
+  font-size: 5em;
+  text-align: end;
+  /* margin-top: 1em; */
+  /* border: 1px solid red; */
+  opacity: 0.7;
+}
+.ltext {
+  width: 25%;
+  /* border:1px solid red; */
+  font-size: 2em;
+  margin-left: 1em;
+  padding-top: 5em;
+  color: #7b7d7e;
+  /* margin-top: 3em; */
+  /* align-items: flex-end; */
+}
+.sm {
+  list-style: none;
+  align-items: flex-end;
+  justify-content: end;
+  /* border: 1px solid red; */
+  width: 20%;
+  height: 100%;
+}
+.smlist {
+  text-align: end;
+  margin-left: 4em;
+  margin-bottom: 2em;
+}
+.twitter {
+  height: 1em;
+  width: 1em;
+}
+.but1 {
+  /* border: 1px solid red; */
+  text-align: right;
+  margin-right: 3em;
+  margin-top: 1em;
+}
+.button {
+  height: 3em;
+  width: 25em;
+  color: #fff;
+  background-color: #7b7d7e;
+  justify-content: right;
+}
+
+.end {
+  display: flex;
+  flex-direction: row;
+}
+
+.bullet {
+  display: flex;
+  flex-direction: row;
+}
+.point1 {
+  border: 1px solid black;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 24px;
+  opacity: 0.7;
+}
+.line-new {
+  border: 1px solid black;
+  background-color: black;
+  position: relative;
+  top: 42px;
+  right: 10px;
+  opacity: 0.3;
+  height: 16em;
+}
+.point1:nth-child(1) {
+  background-color: black;
+  background: black;
+  opacity: 0.8;
+}
+.photo {
+  margin-top: 2.5em;
+  position: relative;
+  right: 1em;
+  /* width: 5em; */
+}
+.photo1 {
+  list-style: none;
+  margin-top: 24px;
+  opacity: 0.7;
+  width: 7em;
+}
+.photo1:nth-child(1) {
+  color: black;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.comma {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  /* width: 3em; */
+}
+.title-comma {
+  font-size: 1.3em;
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-bottom: 0.25em;
+}
+.commas {
+  padding-top: 2.5em;
+  height: 30px;
+  width: 30px;
+}
+.image2 {
+  padding-top: 0px;
+  height: 10em;
+  width: 30em;
+}
+.arrow {
+  width: 30%;
+  /* border: 1px solid red; */
+  text-align: center;
+  align-content: center;
+  padding-top: 6em;
+}
+.arrow-new {
+  height: 7em;
+  /* width: 100px; */
+  width: 40%;
+}
+/* .lines {
+    display: none;
+  } */
+@media (min-width: 800px) {
+  .lines {
+    display: none;
+  }
+  .logo-p {
+    display: none;
+  }
+  .social-short {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100vh;
+  }
+
+  .logo-p {
+    margin-top: 20px;
+    height: 20px;
+    width: 50px;
+  }
+  .lines {
+    margin-top: 20px;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+  }
+  .menu {
+    display: none;
+  }
+  .ltext {
+    width: 50%;
+    font-size: 3em;
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
+    text-align: center;
+  }
+  .social-short {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0px;
+    margin-right: 10px;
+    margin-top: -20px;
+  }
+  .social {
+    display: none;
+  }
+  .button {
+    height: 3em;
+    width: 100vh;
+    margin-left:20px;
+    padding:0px;
+    color: #fff;
+    border: none;
+    background-color: #7b7d7e;
+    justify-content: center;
+    align-self: center;
+  
+  }
+  .image2{
+    width:80%;
+  }
+}
+
